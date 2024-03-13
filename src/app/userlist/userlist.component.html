@@ -1,0 +1,30 @@
+
+<app-adminhome></app-adminhome>
+
+<h2>User List</h2>
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+      <tr style="border: 1px solid black;">
+        <th style="border: 1px solid black; padding: 8px;">ID</th>
+        <th style="border: 1px solid black; padding: 8px;">Name</th>
+        <th style="border: 1px solid black; padding: 8px;">Email</th>
+        <th style="border: 1px solid black; padding: 8px;">Address</th>
+        <th style="border: 1px solid black; padding: 8px;">Phone</th>
+        <th style="border: 1px solid black; padding: 8px;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of Userlist" style="border: 1px solid black;">
+        <td style="border: 1px solid black; padding: 8px;">{{ user.customerId }}</td>
+        <td style="border: 1px solid black; padding: 8px;">{{ user.customerName }}</td>
+        <td style="border: 1px solid black; padding: 8px;">{{ user.email }}</td>
+        <td style="border: 1px solid black; padding: 8px;">{{ user.address }}</td>
+        <td style="border: 1px solid black; padding: 8px;">{{ user.phone }}</td>
+        <td><button (click)="removeUser(user.id)">Remove</button></td> 
+      </tr>
+    </tbody>
+  </table>
+  
+
+
+

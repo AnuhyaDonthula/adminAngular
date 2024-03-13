@@ -1,0 +1,32 @@
+
+<h2>Product List</h2>
+
+<table style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px;">ID</th>
+      <th style="border: 1px solid black; padding: 8px;">Name</th>
+      <th style="border: 1px solid black; padding: 8px;">Description</th>
+      <th style="border: 1px solid black; padding: 8px;">Quantity</th>
+      <th style="border: 1px solid black; padding: 8px;">Price</th>
+      <th style="border: 1px solid black; padding: 8px;">Photo</th>
+      <th style="border: 1px solid rgba(0, 0, 0, 0.838); padding: 8px;">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of servicearray">
+      <td style="border: 1px solid black; padding: 8px;">{{ product.productId }}</td>
+      <td style="border: 1px solid black; padding: 8px;">{{ product.productName }}</td>
+      <td style="border: 1px solid black; padding: 8px;">{{ product.description }}</td>
+      <td style="border: 1px solid black; padding: 8px;">{{ product.stockQuantity }}</td>
+      <td style="border: 1px solid black; padding: 8px;">{{ product.price }}</td>
+      <td class="img-container"><img [src] = "product.productPhoto" alt = ""></td>
+      
+      <td style="border: 1px solid black; padding: 8px;">
+        <button (click)="edit(product.productId)">Edit</button>
+        <button (click)="delete()">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button [routerLink]="['/addproduct']">Add Product</button>

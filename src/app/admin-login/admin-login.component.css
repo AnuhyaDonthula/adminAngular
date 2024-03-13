@@ -1,0 +1,77 @@
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure body covers entire viewport */
+  }
+  
+  .container {
+    position:fixed; /* Position the container relative to the viewport */
+    /* top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    z-index: -1;  */
+  }
+  
+  .container img {
+    width: 150%; /* Make the image width 100% of the container width */
+    height: 0%; /* Make the image height 100% of the container height */
+    object-fit:cover; /* Cover the entire container with the image while preserving its aspect ratio */
+  }
+ 
+
+
+
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .AdminLogin-container {
+    width: 300px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .card-title {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .invalid-feedback {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  

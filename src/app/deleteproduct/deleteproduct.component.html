@@ -1,0 +1,14 @@
+<div class="container mt-4">
+        <h1>Delete Product</h1>
+
+        <form (ngSubmit)="onDelete()" autocomplete="off" novalidate>
+            <div class = "form-group">
+                <label for="productId">Product Id:</label>
+                <input [(ngModel)]="productId" name="productId" required id="productId" type="text"
+                 class="form-control" placeholder="Enter Product Id.." title="Enter product Id" 
+                 required/>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </form>
+</div>

@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Align the container edges with the viewport edges */
+    bottom: 0;
+    /* width: 100%;
+    height: 100%; */
+    z-index: -1;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+ 
+
+
+h1 {
+    text-align: center;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+  
+  /* Style for the navbar */
+  .navbar {
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff; /* Adjust the background color as needed */
+    margin:auto; 
+    /* margin-right: 100px ; */
+
+  }
+  
+  .navbar-toggler-icon {
+    color: #fff; /* Adjust the color of the toggler icon as needed */
+  }
+  
+  .navbar-nav {
+    margin-right: 200px;
+  }
+  
+  .nav-link {
+    color: #fff; /* Adjust the color of the nav links as needed */
+    margin-right: 10px; /* Adjust the right margin between nav links as needed */
+  }
+  
+  .nav-link:hover {
+    color: #fff; /* Adjust the color of the nav links on hover as needed */
+    text-decoration: none; /* Remove underline on hover */
+  }
+ 
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+ 
+}
+ 
+nav{
+  flex:1;
+  text-align: right;
+}
+.logo {
+  margin-right: 400px; /* Adjust spacing between logo and navigation */
+}
+ 
+.logo img {
+  width: 300px; /* Adjust logo width */
+  size: 30px;
+ 
+    height: fit-content;
+    background-color:#007bff ;
+}
+ 
+.search1{
+  width: 200px;
+}
+ 
+nav ul {
+  list-style-type: none; /* Remove default list styles */
+  margin:0;
+  padding: 0;
+ 
+}
+ 
+ 
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 80px; /* Adjust spacing between navigation items */
+}
+ 
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color:#000; /* Set link color */
+  font-weight: bold; /* Set font weight */
+  font-size:large;
+}
+ 
+nav ul li a:hover {
+  color: #c11a4c; /* Change link color on hover */
+}
+ 
+.menu-icon {
+  display: none; /* Hide menu icon by default */
+}
+ 
+ 
+ 
